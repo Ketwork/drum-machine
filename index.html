@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Drum Machine</title>
+  </head>
+  <body>
+    <div class="container" id="drum-machine">
+      <h1 class="text-center">Drum Machine</h1>
+      <div class="display-container">
+        <div id="display-pads">
+          <button class="drum-pad btn btn-success" id="drum-q" onclick="play('Q')">
+            Q
+            <audio src="./clip/drum01.wav" class="clip" id="Q"></audio>
+          </button>
+          <button class="drum-pad btn btn-success" id="drum-w" onclick="play('W')">
+            W
+            <audio src="./clip/drum02.wav" class="clip" id="W"></audio>
+          </button>
+          <button class="drum-pad btn btn-success" id="drum-e" onclick="play('E')">
+            E
+            <audio src="./clip/drum03.wav" class="clip" id="E"></audio>
+          </button>
+          <button class="drum-pad btn btn-success" id="drum-a" onclick="play('A')">
+            A
+            <audio src="./clip/drum04.wav" class="clip" id="A"></audio>
+          </button>
+          <button class="drum-pad btn btn-success" id="drum-s" onclick="play('S')">
+            S
+            <audio src="./clip/drum05.wav" class="clip" id="S"></audio>
+          </button>
+          <button class="drum-pad btn btn-success" id="drum-d" onclick="play('D')">
+            D
+            <audio src="./clip/drum06.wav" class="clip" id="D"></audio>
+          </button>
+          <button class="drum-pad btn btn-success" id="drum-q" onclick="play('Z')">
+            Z
+            <audio src="./clip/drum07.wav" class="clip" id="Z"></audio>
+          </button>
+          <button class="drum-pad btn btn-success" id="drum-x" onclick="play('X')">
+            X
+            <audio src="./clip/drum08.wav" class="clip" id="X"></audio>
+          </button>
+          <button class="drum-pad btn btn-success" id="drum-c" onclick="play('C')">
+            C
+            <audio src="./clip/drum09.wav" class="clip" id="C"></audio>
+          </button>
+        </div>
+        <div class="card my-3 bg-transparent">
+          <div id="display" class="card-body text-light">
+            Drum Letter
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
