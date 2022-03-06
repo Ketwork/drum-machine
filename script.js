@@ -5,7 +5,9 @@ function play(letter) {
 }
 
 window.document.onkeyup = function(event) {
+  let drumKeys = /Q|W|E|R|A|S|D|Z|X|C/ ;
   let keyPressed = event.key.toUpperCase()
-  play(keyPressed);
-  console.log(keyPressed)
+  if (drumKeys.test(keyPressed)) {
+    play(keyPressed);
+  }
 }
